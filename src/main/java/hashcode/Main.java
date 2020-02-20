@@ -17,10 +17,10 @@ public class Main {
 
         List<String> input = FileUtils.readLines(new File(INPUT_FILE), Charset.defaultCharset());
 
-        String firstLine = input.get(0);
-        String books = firstLine.substring(0, 1);
-        String librares = firstLine.substring(2, 3);
-        String deadline = firstLine.substring(4, 5);
+        String[] firstLine = input.get(0).split(" ");
+        String books = firstLine[0];
+        String librares = firstLine[1];
+        String deadline = firstLine[2];
 
         System.out.println(books);
         System.out.println(librares);
