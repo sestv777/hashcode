@@ -16,7 +16,6 @@ import static lombok.AccessLevel.PRIVATE;
 public class Book {
 
     int id;
-
     int score;
 
 }
